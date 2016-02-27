@@ -6,9 +6,9 @@ module.exports = {
 
 var fetcher = new Fetcher({a: 'ext'});
 
-fetcher.getMinistryInfo(12, function(err, info) {
+fetcher.listMinistries(function(err, info) {
   if ( err ) return console.error( err );
 
-  console.log(info)
+  console.log(JSON.stringify(info));
 });
 
