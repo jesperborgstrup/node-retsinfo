@@ -4,6 +4,7 @@
   "description": "Read legal documents from retsinformation.dk and convert their contents to JSON",
   "main": "index.js",
   "dependencies": {
+    "async": "^1.5.2",
     "html-entities": "^1.2.0",
     "htmlparser": "^1.7.7",
     "lodash": "^4.5.1",
