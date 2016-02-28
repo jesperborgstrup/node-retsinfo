@@ -173,31 +173,42 @@ describe('Fetcher', function() {
 
         document.chapters.length.should.equal(9);
 
-        document.chapters[0].paragraphs.length.should.equal(1);
-        document.chapters[1].paragraphs.length.should.equal(2);
-        document.chapters[2].paragraphs.length.should.equal(1);
-        document.chapters[3].paragraphs.length.should.equal(11);
-        document.chapters[4].paragraphs.length.should.equal(5);
-        document.chapters[5].paragraphs.length.should.equal(3);
-        document.chapters[6].paragraphs.length.should.equal(3);
-        document.chapters[7].paragraphs.length.should.equal(3);
-        document.chapters[8].paragraphs.length.should.equal(3);
+        document.chapters[0].sections.length.should.equal(1);
+        document.chapters[1].sections.length.should.equal(2);
+        document.chapters[2].sections.length.should.equal(1);
+        document.chapters[3].sections.length.should.equal(11);
+        document.chapters[4].sections.length.should.equal(5);
+        document.chapters[5].sections.length.should.equal(3);
+        document.chapters[6].sections.length.should.equal(3);
+        document.chapters[7].sections.length.should.equal(3);
+        document.chapters[8].sections.length.should.equal(3);
 
-        document.chapters[0].paragraphs[0].no.should.equal('1');
-        document.chapters[0].paragraphs[0].text.should.equal('Fordringer på penge eller andre ydelser forældes efter reglerne i denne lov, medmindre andet følger af særlige bestemmelser om forældelse i anden lov.');
-        document.chapters[0].paragraphs[0].subParagraphs.length.should.equal(0);
+        document.chapters[0].sections[0].no.should.equal('1');
+        document.chapters[0].sections[0].text.should.equal('Fordringer på penge eller andre ydelser forældes efter reglerne i denne lov, medmindre andet følger af særlige bestemmelser om forældelse i anden lov.');
+        document.chapters[0].sections[0].paragraphs.length.should.equal(0);
 
-        document.chapters[1].paragraphs[0].no.should.equal('2');
-        document.chapters[1].paragraphs[0].text.should.equal('Forældelsesfristerne regnes fra det tidligste tidspunkt, til hvilket fordringshaveren kunne kræve at få fordringen opfyldt, medmindre andet følger af andre bestemmelser.');
-        document.chapters[1].paragraphs[0].subParagraphs.length.should.equal(4);
+        document.chapters[1].sections[0].no.should.equal('2');
+        document.chapters[1].sections[0].text.should.equal('Forældelsesfristerne regnes fra det tidligste tidspunkt, til hvilket fordringshaveren kunne kræve at få fordringen opfyldt, medmindre andet følger af andre bestemmelser.');
+        document.chapters[1].sections[0].paragraphs.length.should.equal(4);
 
-        document.chapters[1].paragraphs[1].no.should.equal('2 a');
-        document.chapters[1].paragraphs[1].text.should.equal('For fordringer, som støttes på skriftlig aftale om indskud i et selskab, regnes forældelsesfristen tidligst fra det tidspunkt, hvor selskabet beslutter at indkalde indskuddet. Uanset 1. pkt. regnes forældelsesfristen dog senest fra 10 år efter begyndelsestidspunktet i henhold til § 2.');
-        document.chapters[1].paragraphs[1].subParagraphs.length.should.equal(0);
+        document.chapters[1].sections[1].no.should.equal('2 a');
+        document.chapters[1].sections[1].text.should.equal('For fordringer, som støttes på skriftlig aftale om indskud i et selskab, regnes forældelsesfristen tidligst fra det tidspunkt, hvor selskabet beslutter at indkalde indskuddet. Uanset 1. pkt. regnes forældelsesfristen dog senest fra 10 år efter begyndelsestidspunktet i henhold til § 2.');
+        document.chapters[1].sections[1].paragraphs.length.should.equal(0);
 
-        document.chapters[8].paragraphs[2].no.should.equal('31');
-        document.chapters[8].paragraphs[2].text.should.equal('Loven gælder ikke for Færøerne og Grønland, men kan ved kongelig anordning sættes i kraft for disse landsdele med de afvigelser, som de særlige færøske og grønlandske forhold tilsiger.');
-        document.chapters[8].paragraphs[2].subParagraphs.length.should.equal(0);
+        document.chapters[8].sections[2].no.should.equal('31');
+        document.chapters[8].sections[2].text.should.equal('Loven gælder ikke for Færøerne og Grønland, men kan ved kongelig anordning sættes i kraft for disse landsdele med de afvigelser, som de særlige færøske og grønlandske forhold tilsiger.');
+        document.chapters[8].sections[2].paragraphs.length.should.equal(0);
+
+        document.commencements.length.should.equal(5);
+
+        document.commencements[0].text.should.equal('Lov nr. 1336 af 19. december 2008 (Konsekvensændringer som følge af lov om inddrivelse af gæld til det offentlige) indeholder følgende ikrafttrædelses- og overgangsbestemmelse:');
+        document.commencements[0].sections.length.should.equal(1);
+        document.commencements[0].sections[0].paragraphs.length.should.equal(2);
+
+        document.commencements[0].sections[0].paragraphs[0].text.should.equal('Loven træder i kraft den 1. januar 2009, jf. dog stk. 2. § 11 finder alene anvendelse på afgørelser om lønindeholdelse, der træffes efter lovens ikrafttræden.');
+        document.commencements[0].sections[0].paragraphs[1].text.should.equal('(Udelades)');
+
+        document.footnotes.length.should.equal(7);
 
         done();
       });
