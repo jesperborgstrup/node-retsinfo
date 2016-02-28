@@ -195,6 +195,24 @@ describe('Fetcher', function() {
         document.chapters[1].sections[1].text.should.equal('For fordringer, som støttes på skriftlig aftale om indskud i et selskab, regnes forældelsesfristen tidligst fra det tidspunkt, hvor selskabet beslutter at indkalde indskuddet. Uanset 1. pkt. regnes forældelsesfristen dog senest fra 10 år efter begyndelsestidspunktet i henhold til § 2.');
         document.chapters[1].sections[1].paragraphs.length.should.equal(0);
 
+        document.chapters[2].sections[0].no.should.equal('3');
+        document.chapters[2].sections[0].text.should.equal('Forældelsesfristen er 3 år, medmindre andet følger af andre bestemmelser.');
+        document.chapters[2].sections[0].paragraphs[0].no.should.equal('2');
+        document.chapters[2].sections[0].paragraphs[0].text.should.equal('Var fordringshaveren ubekendt med fordringen eller skyldneren, regnes forældelsesfristen i stk. 1 først fra den dag, da fordringshaveren fik eller burde have fået kendskab hertil.');
+        document.chapters[2].sections[0].paragraphs[1].no.should.equal('3');
+        document.chapters[2].sections[0].paragraphs[1].text.should.equal('Forældelse indtræder senest');
+        document.chapters[2].sections[0].paragraphs[1].listItems.length.should.equal(4);
+        document.chapters[2].sections[0].paragraphs[1].listItems[0].no.should.equal('1');
+        document.chapters[2].sections[0].paragraphs[1].listItems[0].text.should.equal('30 år efter den skadevoldende handlings ophør for fordringer på erstatning eller godtgørelse i anledning af personskade, jf. dog stk. 4, og for fordringer på erstatning for skade forvoldt ved forurening af luft, vand, jord eller undergrund eller ved forstyrrelser ved støj, rystelser el.lign.,');
+        document.chapters[2].sections[0].paragraphs[1].listItems[1].no.should.equal('2');
+        document.chapters[2].sections[0].paragraphs[1].listItems[1].text.should.equal('10 år efter den skadevoldende handlings ophør for fordringer på erstatning for skade forvoldt uden for kontraktforhold, som ikke er omfattet af nr. 1,');
+        document.chapters[2].sections[0].paragraphs[1].listItems[2].no.should.equal('3');
+        document.chapters[2].sections[0].paragraphs[1].listItems[2].text.should.equal('10 år efter begyndelsestidspunktet i henhold til § 2 a for fordringer, som støttes på skriftlig aftale om indskud i et selskab, og');
+        document.chapters[2].sections[0].paragraphs[1].listItems[3].no.should.equal('4');
+        document.chapters[2].sections[0].paragraphs[1].listItems[3].text.should.equal('10 år efter begyndelsestidspunktet i henhold til § 2 for andre fordringer.');
+        document.chapters[2].sections[0].paragraphs[2].no.should.equal('4');
+        document.chapters[2].sections[0].paragraphs[2].text.should.equal('Stk. 3, nr. 1, finder ikke anvendelse på fordringer på erstatning eller godtgørelse i anledning af en erhvervssygdom, jf. § 7 i lov om arbejdsskadesikring.');
+
         document.chapters[8].sections[2].no.should.equal('31');
         document.chapters[8].sections[2].text.should.equal('Loven gælder ikke for Færøerne og Grønland, men kan ved kongelig anordning sættes i kraft for disse landsdele med de afvigelser, som de særlige færøske og grønlandske forhold tilsiger.');
         document.chapters[8].sections[2].paragraphs.length.should.equal(0);
